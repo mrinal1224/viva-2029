@@ -1,87 +1,95 @@
-🧩 Problem: Simple Notes App
-🎯 Objective
+Perfect 👍
+Here’s a **simpler, beginner-friendly but still meaningful DOM manipulation question**.
+No tricks, no advanced patterns — just **clear logic + core DOM APIs**.
 
-Create a Simple Notes App where users can:
+---
 
-Add notes
+## 🧩 Problem: Simple Notes App
 
-Delete individual notes
+### 🎯 Objective
 
-See total number of notes
+Create a **Simple Notes App** where users can:
 
-🧱 Starter HTML (DO NOT CHANGE)
+* Add notes
+* Delete individual notes
+* See total number of notes
+
+---
+
+## 🧱 Starter HTML (DO NOT CHANGE)
+
+```html
 <input type="text" id="noteInput" placeholder="Enter a note" />
 <button id="addNoteBtn">Add Note</button>
 
 <p>Total Notes: <span id="noteCount">0</span></p>
 
 <ul id="noteList"></ul>
+```
 
-📌 Requirements
-1️⃣ Add Note
+---
 
-When Add Note is clicked:
+## 📌 Requirements
 
-Read the value from the input
+### 1️⃣ Add Note
 
-Ignore empty input
+* When **Add Note** is clicked:
 
-Create a <li> element containing:
+  * Read the value from the input
+  * Ignore empty input
+  * Create a `<li>` element containing:
 
-The note text
+    * The note text
+    * A **Delete** button
+  * Append the `<li>` to `#noteList`
+  * Clear the input field
+  * Update the total note count
 
-A Delete button
+---
 
-Append the <li> to #noteList
+### 2️⃣ Delete Note
 
-Clear the input field
+* When **Delete** is clicked:
 
-Update the total note count
+  * Remove only that note from the list
+  * Update the total note count
 
-2️⃣ Delete Note
+---
 
-When Delete is clicked:
-
-Remove only that note from the list
-
-Update the total note count
-
-🛠️ Rules / Constraints
+## 🛠️ Rules / Constraints
 
 You must:
 
-Use document.querySelector / getElementById
+* Use `document.querySelector` / `getElementById`
+* Use `createElement`
+* Use `appendChild`
+* Use `addEventListener`
+* Not use `innerHTML`
+* Not use any framework or library
 
-Use createElement
+---
 
-Use appendChild
+## 🧠 Hints 
 
-Use addEventListener
+* Use `parentElement.remove()` to delete a note
+* Use `children.length` to calculate total notes
 
-Not use innerHTML
+---
 
-Not use any framework or library
+## 🧪 Example Flow
 
-🧠 Hints (Optional for Students)
+1. Type: `Buy milk`
+2. Click **Add Note**
 
-Use parentElement.remove() to delete a note
+   * Note appears in list
+   * Total Notes → `1`
+3. Add another note
 
-Use children.length to calculate total notes
+   * Total Notes → `2`
+4. Delete first note
 
-🧪 Example Flow
+   * Total Notes → `1`
 
-Type: Buy milk
+---
 
-Click Add Note
 
-Note appears in list
-
-Total Notes → 1
-
-Add another note
-
-Total Notes → 2
-
-Delete first note
-
-Total Notes → 1
