@@ -1,6 +1,3 @@
-Perfect 👍
-Here’s a **simpler, beginner-friendly but still meaningful DOM manipulation question**.
-No tricks, no advanced patterns — just **clear logic + core DOM APIs**.
 
 ---
 
